@@ -1,0 +1,15 @@
+<table *ngIf="accounts.length > 0">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>City</th>
+    <th>Balance</th>
+  </tr>
+
+  <tr *ngFor="let acc of accounts">
+    <td>{{ acc.name }}</td>
+    <td>{{ acc.email }}</td>
+    <td>{{ acc.address.city }}</td>
+    <td>{{ acc.balance }}</td>
+  </tr>
+</table>

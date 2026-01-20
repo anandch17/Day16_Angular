@@ -1,0 +1,38 @@
+#tableBox {
+  display: none;               /* Angular will control visibility */
+  margin-top: 12px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  padding: 10px;
+}
+
+/* show when Angular allows */
+#tableBox.active {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: left;
+}
+
+thead {
+  background-color: #4b5563;
+  color: #f1f5f9;
+  text-transform: uppercase;
+}
+
+th,
+td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr:hover {
+  background-color: #f9fafb;
+  transition: background-color 0.2s ease;
+}

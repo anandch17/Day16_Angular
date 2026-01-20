@@ -1,0 +1,45 @@
+<div class="max-w-7xl mx-auto px-4 py-6">
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    @for (employee of employees; track $index) {
+
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+
+        <img
+          [src]="employee.photoPath"
+          alt="Employee photo"
+          class="w-full h-56 object-fit"
+        />
+
+        <div class="p-4">
+          <h4 class="text-lg font-semibold mb-3">
+            {{ employee.name }}
+          </h4>
+
+          <div class="space-y-2 text-sm text-gray-700">
+            <div><span class="font-medium">Gender:</span> {{ employee.gender }}</div>
+            <div><span class="font-medium">Date of Birth:</span> {{ employee.dateOfBirth | date }}</div>
+            <div><span class="font-medium">Contact Preference:</span> {{ employee.contactPreference }}</div>
+            <div><span class="font-medium">Phone:</span> {{ employee.phoneNumber }}</div>
+            <div><span class="font-medium">Email:</span> {{ employee.email }}</div>
+            <div><span class="font-medium">Department:</span> {{ employee.department }}</div>
+            <div>
+              <span class="font-medium">Is Active:</span>
+              <span
+                class="ml-1 px-2 py-0.5 rounded text-xs"
+                [ngClass]="employee.isActive
+                  ? 'bg-green-100 text-green-700'
+                  : 'bg-red-100 text-red-700'">
+                {{ employee.isActive }}
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    }
+
+  </div>
+</div>

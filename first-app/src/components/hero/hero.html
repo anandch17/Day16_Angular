@@ -1,0 +1,17 @@
+<div id="Hero">
+    <div id="heading">
+        <h1>Online Banking Operations Dashboard</h1>
+    </div>
+    <div id="main">
+        <button id="viewBtn" (click)="onViewClick()">view accounts</button>
+        <input type="text" name="search" id="search" placeholder="Search by name,email,city">
+        <select name="filter" id="cityFilter">
+            <option value="">All Cities</option>
+        </select>
+        <button id="createBtn" (click)="createAccount()">create account</button>
+        <button id="sortBtn" onclick="sortBalance()">Sort by Balance</button>
+        <button id="totalBtn" onclick="totalBalance()">Total Balance</button>
+        <button id="showBtn" onclick="showTransactions()">Show Transactions</button>
+    </div>
+
+</div>

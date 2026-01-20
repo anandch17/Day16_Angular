@@ -1,0 +1,86 @@
+#main{
+    background-color:white;
+    padding: 4px;
+    border-radius: 10px;
+    box-shadow: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-items: center;  
+}
+
+#heading{
+    font-size: large;
+    font-style: bold;
+    color: grey;
+}
+
+button{
+    padding: 12px 8px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+#viewBtn{
+    background-color: blue;
+    color: white;
+   
+}
+#viewBtn:hover{
+    background-color: rgb(84, 84, 247);
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px #3b82f6; 
+    border: none;
+}
+#search{
+     width: 16rem; 
+  border-radius: 0.25rem black; 
+  padding: 10px 8px;  
+}
+#cityFilter{
+    border-radius: 0.25rem black; 
+  padding: 10px 8px; 
+}
+#cityFilter:focus{
+    outline: none;
+}
+
+#createBtn{
+    background-color: green;
+    color: white;
+    border-radius: 0.25rem;
+}
+#createBtn:hover{
+    background-color: rgb(86, 169, 86);
+}
+
+#sortBtn{
+    background-color: rgb(29, 31, 29);
+    color: white;
+    border-radius: 0.25rem;
+}
+#sortBtn:hover{
+    background-color: rgb(58, 60, 58);
+}
+
+#totalBtn{
+    background-color: indigo;
+    color: white;
+    border-radius: 0.25rem;
+}
+#totalBtn:hover{
+    background-color: rgb(78, 56, 93)
+}
+
+#showBtn{
+    background-color:purple;
+    color: white;
+    border-radius: 0.25rem;
+}
+#showBtn:hover{
+    background-color: rgb(120, 63, 120)
+}
