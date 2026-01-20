@@ -1,0 +1,18 @@
+<div>
+  <h1>Messages</h1>
+
+  <input
+    type="text"
+    [(ngModel)]="message"
+    placeholder="Enter message"
+  />
+
+  <button (click)="addMessage()">Add</button>
+  <button (click)="getMessages()">Get</button>
+
+  <ul>
+    <li *ngFor="let msg of messages">
+      {{ msg }}
+    </li>
+  </ul>
+</div>
